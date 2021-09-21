@@ -1,0 +1,61 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@500&display=swap');
+
+:root{
+    --primary-color : #374151;
+    --secondary-color :  #6B7280;
+}
+
+body {
+    font-family: 'Montserrat', sans-serif;
+}
+
+.container {
+    
+    width: 50vw;
+    text-align: center;
+    margin: auto;
+    background-color: var(--primary-color);
+    color: aliceblue;
+   
+}
+
+table, th, td {
+    border: 1px solid black;
+    border-collapse: collapse;
+  }
+
+.change-table{
+    margin: auto;
+    
+}
+
+th,td {
+    width: 100px;
+    padding: 5px;
+
+ }
+
+ .heading{
+     padding-top: 2rem;
+ }
+
+ .check-btn{
+     margin: 1rem;
+     padding: 0.5rem;
+     font-size: 1.3rem;
+     background-color: var(--secondary-color);
+     color: aliceblue;
+     border-radius: 0.5rem;
+ }
+     
+
+ #cash-given{
+     width: 30%;
+     height: 50%;
+     
+ }
+
+ #bill-amount{
+     width: 30%;
+     height: 50%;
+ }

@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Khata Book</title>
+</head>
+
+<body>
+
+    <div class="container">
+        <h1 class='heading'>KHATA BOOK</h1>
+        <p class="description">
+            Enter the bill amount and cash received by the customer and come to know how much has to return.
+        </p>
+        <label for="bill amount"> Bill Amount:</label><br>
+        <input type="number" id="bill-amount"><br>
+        <label for="cash given">Cash Given:</label><br>
+        <input type="number" id="cash-given"><br>
+        <button class="check-btn">check</button><br>
+        <p class="error-message"></p>
+        <caption>Return Change:</caption><br>
+        <table class="change-table">
+            <tr>
+                <th>No. Of Notes</th>
+                <td class="no-of-notes"></td>
+                <td class="no-of-notes"></td>
+                <td class="no-of-notes"></td>
+                <td class="no-of-notes"></td>
+                <td class="no-of-notes"></td>
+                <td class="no-of-notes"></td>
+                <td class="no-of-notes"></td>
+                <td class="no-of-notes"></td>
+            </tr>
+            <tr>
+                <th>Note</th>
+                <td>2000</td>
+                <td>500</td>
+                <td>100</td>
+                <td>50</td>
+                <td>20</td>
+                <td>10</td>
+                <td>5</td>
+                <td>1</td>
+            </tr>
+        </table>
+
+
+    </div>
+
+    <script src="app.js"></script>
+</body>
+
+</html>
