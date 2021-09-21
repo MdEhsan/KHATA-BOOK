@@ -3,10 +3,12 @@
 :root{
     --primary-color : #374151;
     --secondary-color :  #6B7280;
+    --body-color : #F3F4F6;
 }
 
 body {
     font-family: 'Montserrat', sans-serif;
+    background-color: var(--body-color);
 }
 
 .container {
@@ -58,4 +60,28 @@ th,td {
  #bill-amount{
      width: 30%;
      height: 50%;
+ }
+
+ /* .footer{
+     text-align: center;
+     background-color: var(--secondary-color);
+ } */
+
+ .footer-list{
+     list-style: none;
+ }
+
+ .footer-list-item{
+     display: inline;
+     padding: 0.5rem;
+ }
+
+ .footer-icon{
+     color: var(--secondary-color);
+     font-size: 30px;
+     margin-bottom: 1rem;
+ }
+
+ .footer-heading{
+     padding-left: 2rem;
  }
