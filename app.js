@@ -29,7 +29,8 @@ checkButton.addEventListener("click", function billCashAmount() {
 function calculateChange(amountReturn){
     for(let i = 0; i<avilableNotes.length; i++){
         const numberOfNotes = Math.trunc(amountReturn/avilableNotes[i])
-        amountReturn %= avilableNotes[i]
+        // amountReturn %= avilableNotes[i]
+        amountReturn = amountReturn % avilableNotes[i]
         notes[i].innerText = numberOfNotes;
     }
 
