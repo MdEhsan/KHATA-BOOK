@@ -15,7 +15,7 @@ checkButton.addEventListener("click", function billCashAmount() {
     let cashGivenValue = cashGiven.value
 
     if (billAmountValue > 0) {
-        if (cashGivenValue > billAmountValue || cashGivenValue === billAmountValue) {
+        if (cashGivenValue >= billAmountValue) {
             const amountReturn = cashGivenValue - billAmountValue
             calculateChange(amountReturn)
         } else {
