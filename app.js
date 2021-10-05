@@ -11,8 +11,8 @@ const avilableNotes = [2000, 500, 100, 50, 20, 10, 5, 1]
 checkButton.addEventListener("click", function billCashAmount() {
     hideMessage();
 
-    let billAmountValue = billAmount.value;
-    let cashGivenValue = cashGiven.value
+    let billAmountValue = Number(billAmount.value);
+    let cashGivenValue = Number(cashGiven.value)
 
     if (billAmountValue > 0) {
         if (cashGivenValue >= billAmountValue) {
@@ -27,7 +27,7 @@ checkButton.addEventListener("click", function billCashAmount() {
 })
 
 function calculateChange(amountReturn){
-    for(let i = 0; i<avilableNotes.length; i++){
+    for(let i = 0; i < avilableNotes.length; i++){
         const numberOfNotes = Math.trunc(amountReturn/avilableNotes[i])
         // amountReturn %= avilableNotes[i]
         amountReturn = amountReturn % avilableNotes[i]
